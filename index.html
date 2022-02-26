@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>リトルハウス</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+
+<body>
+  <header>
+    <div class="page-menu">
+      <ul>
+        <a href="index.html">
+          <div class="content">
+            <img src="images/trump-home.png" alt="ホーム" width="50" height="80">
+          </div>
+        </a>
+        <a href="menu.html">
+          <li class="icon menu">
+            <img src="images/trump-spade.png" alt="喫" width="50" height="80">
+          </li>
+        </a>
+        <a href="legacy.html">
+          <li class="icon legacy">
+            <img src="images/trump-heart.png" alt="茶" width="50" height="80">
+          </li>
+        </a>
+        <a href="customer.html">
+          <li class="icon customer">
+            <img src="images/trump-club.png" alt="小" width="50" height="80">
+          </li>
+        </a>
+        <a href="family.html">
+          <li class="icon family">
+            <img src="images/trump-dia.png" alt="家" width="50" height="80">
+          </li>
+        </a>
+      </ul>
+    </div>
+  </header>
+
+  <section class="sec1">
+    <div class="sky-back">
+      <h1 class="main-title">
+        あなたの心に Little House ～
+      </h1>
+      <div class="inside-pic">
+        <img src="images/littlehouse01.jpg" alt="新店舗">
+      </div>
+    </div>
+  </section>
+
+
+<section class="sec2">
+  <h2>心を満たすメニューたち</h2>
+  <div class="main-pic">
+    <div class="swiper-container mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <!-- <h3></h3> -->
+          <img class="pic" src="images/menu1.jpg" alt="メニュー１" width="300" height="200">
+        </div>
+        <div class="swiper-slide">
+          <!-- <h3></h3> -->
+          <img class="pic" src="images/menu2.jpg" alt="メニュー２" width="300" height="200">
+        </div>
+        <div class="swiper-slide">
+          <!-- <h3></h3> -->
+          <img class="pic" src="images/menu3.jpg" alt="メニュー３" width="300" height="200">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="sec3">
+  <h2>スペシャル・サービス</h2>
+  <ul class="service">
+    <li>
+      <p>１，オープン記念<br>（200円引年賀状）</p>
+      <img src="images/special1.jpg" alt="年賀状">
+    </li>
+    <li>
+      <p>２，限定ランチ<br>(特価 550円)</p>
+      <img src="images/special2.jpg" alt="ランチ">
+    </li>
+    <li>
+      <p>３，祝誕生日<br>（〇〇〇サービス）</p>
+      <img src="images/flower1.png" alt="誕生日">
+    </li>
+  </ul>
+</section>
+
+
+<section class="sec4">
+  <h2>インフォメーション</h2>
+  <div class="container">
+    <div class="info">
+      <p>お知らせ</p>
+      <div class="twitter">
+        <a class="twitter-timeline" data-height="250" href="https://twitter.com/8Njb1b?ref_src=twsrc%5Etfw">Tweets by 8Njb1b</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+    </div>
+
+    <div class="photo">
+      <p>店内フォト</p>
+      <img src="images/shop1.jpg" alt="店内">
+    </div>
+
+    <div class="map">
+      <p>マップ</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3126.1180625009288!2d140.30433321523932!3d38.41563637964788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8bc31e7914b267%3A0x832e7b201b6961ed!2z44Oq44OI44Or44OP44Km44K5!5e0!3m2!1sja!2sjp!4v1645792533232!5m2!1sja!2sjp" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>(c)河北町の喫茶店・リトルハウス</p>
+</footer>
+
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      // slidesPerView: "auto",
+      spaceBetween: 20,
+      centeredSlides: true,
+      loop: true,
+      effect: 'fade',
+      transitionTimingFunction: 'easeInOut',
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      scrollbar: {
+        el: ".swiper-scrollbar",
+      },
+    });
+  </script>
+  
+</body>
+</html>

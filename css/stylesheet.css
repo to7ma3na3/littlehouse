@@ -1,0 +1,895 @@
+@charset "UTF-8";
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+/* ここから */
+
+body {
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+  line-height: 1.7;
+  color: #333;
+}
+
+
+header {
+  width: 100%;
+  background-image:url(../images/spring.png);
+  background-size: cover;
+}
+
+header .page-menu a {
+  cursor: pointer;
+}
+
+header .page-menu h2 {
+  font-size: 24px;
+  color: blue;
+  text-align: center;
+}
+
+header .page-menu {
+  width: 50%;
+  margin: 0 auto;
+}
+
+header .page-menu ul {
+  list-style: none;
+  display: flex;
+}
+
+header .page-menu .icon {
+  margin-top: 5px;
+  margin-left: 100px;
+}
+
+header .page-men .icon:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.sec1 {
+  width: 80%;
+  margin: 0 auto;
+  background-color: rgb(209, 237, 248);
+  padding-bottom: 20px;
+}
+
+.sec1 h1 {
+  font-size: 24px;
+  color: blue;
+  font-weight: bold;
+  text-align: center;
+}
+
+.sec1 .inside-pic {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sec1 .inside-pic img {
+  display: block;
+  width: 50%;
+  height: 240px;
+  object-fit: cover;
+}
+
+
+.sec2 {
+  margin: 30px auto;
+  width: 80%;
+  background-image:url(../images/spring.png);
+  background-size: cover;
+  background-position: 50% 50%;
+  padding-bottom: 20px;
+}
+
+.sec2 h2 {
+  font-size: 24px;
+  color: blue;
+  font-weight: bolder;
+  text-align: center;
+  border: 1px solid red;
+  background-color: antiquewhite;
+}
+
+.sec2 .main-pic {
+  margin-top: 10px;
+  width: 100%;
+  height: auto;
+}
+.sec2 .main-pic .swiper-container {
+  /* width: 40%; */
+  width: 400px;
+  height: 250px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.sec2 .main-pic .swiper-wrapper {
+  width: 100%;
+  /* width: 450px; */
+  background-color: #fff;
+}
+
+.sec2 .main-pic .swiper-slide {
+  display: block;
+  width: 100%;
+  height: 250px;
+  background-color: #eeeeee;
+}
+.sec2 .main-pic .swiper-slide img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.sec2 .main-pic .swiper-slide h3 {
+  font-size: 22px;
+  line-height: 1.8;
+  text-align: center;
+}
+
+
+.sec3 {
+  margin: 30px auto;
+  width: 80%;
+  height: auto;
+  padding-bottom: 20px;
+}
+
+.sec3 h2 {
+  font-size: 24px;
+  color: blue;
+  text-align: center;
+  border: 1px solid red;
+  background-color: pink;
+}
+
+.sec3 .service {
+  width: 80%;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.sec3 .service li {
+  display: block;
+  width: 30%;
+  height: 200px;
+  background-color: #fff;
+}
+
+.sec3 .service li p {
+  font-size: 18px;
+  color: blue;
+  line-height: 1.2;
+}
+
+.sec3 .service li img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 200px;
+  object-fit: contain
+}
+
+
+.sec4 {
+  margin-top: 50px;
+  width: 100%;
+  height: 350px;
+  background-color: #ff9;
+}
+
+.sec4 h2 {
+  font-size: 24px;
+  color: blue;
+  text-align: center;
+  border: 1px solid red;
+} 
+
+.sec4 .container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.sec4 .container p {
+  font-size: 20px;
+  font-weight: bold;
+  color: blue;
+}
+
+.sec4 .container .info {
+  width: 30%;
+  height: 250px;
+}
+
+.sec4 .container .photo {
+  width: 30%;
+  height: 250px;
+}
+
+.sec4 .container .photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.sec4 .container .map {
+  width: 30%;
+  height: 250px;
+}
+
+
+footer {
+  margin-top: 30px;
+  width: 100%;
+  height: 50px;
+  background-color: brown;
+}
+
+footer p {
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+  line-height: 50px;
+  text-align: center;
+}
+
+
+/* メニュー */
+
+.sec10 {
+  width: 100%;
+  height: auto;
+  padding-top: 5px;
+  background-image:url(../images/season1.png);
+  background-position: 50% 30%;
+  background-size: cover;
+}
+
+.sec10 .page-menu a {
+  cursor: pointer;
+}
+
+.sec10 .page-menu h2 {
+  font-size: 24px;
+  color: blue;
+  text-align: center;
+}
+
+.sec10  .page-menu {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.sec10  .page-menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.sec10  .page-menu .icon {
+  width: 50px;
+  height: 50px;
+  margin-left: 100px;
+  background-color: pink;
+}
+
+.sec10  .page-men .icon:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.sec11 {
+  width: 100%;
+  background-color: #ff9;
+  padding-bottom: 20px;
+}
+
+.sec11 h1 {
+  font-size: 24px;
+  color: blue;
+  font-weight: bold;
+  text-align: center;
+}
+
+.sec11 .inside-pic {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sec11 .inside-pic img {
+  display: block;
+  width: 30%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.sec12 {
+  margin: 20px auto;
+  width: 100%;
+}
+
+.sec12 .menu-bg {
+  margin: 20px auto;
+  width: 50%;
+  height: 320px;
+  background-image: url(../images/season1.png);
+}
+
+.sec12 .menu-bg .swiper-container {
+  padding-top: 40px;
+  margin: 0px auto;
+  width: 50%;
+  height: 250px;
+  overflow: hidden;
+}
+.sec12 .menu-bg .swiper-wrapper {
+  width: 100%;
+  background-color: #fff;
+}
+
+.sec12 .menu-bg .swiper-slide {
+  display: block;
+  width: 100%;
+  height: 250px;
+  background-color: #eeeeee;
+}
+.sec12 .menu-bg .swiper-slide img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.sec13 {
+  width: 100%;
+}
+
+.sec13 .main-pic {
+  margin-top: 10px;
+  width: 100%;
+  height: auto;
+}
+.sec13 .main-pic .swiper-container {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+}
+.sec13 .main-pic .swiper-wrapper {
+  width: 15%;
+  background-color: #fff;
+}
+
+.sec13 .main-pic .swiper-slide {
+  display: block;
+  background-color: #eeeeee;
+}
+
+.sec13 .main-pic .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+
+
+
+/*  伝説のメニュー */
+
+.sec20 {
+  width: 100%;
+  height: auto;
+  padding-top: 5px;
+  background-image:url(../images/season2.png);
+  background-size: cover;
+  background-position: 50% 40%;
+
+}
+
+.sec20 .page-menu a {
+  cursor: pointer;
+}
+
+.sec20 .page-menu h2 {
+  font-size: 24px;
+  color: blue;
+  text-align: center;
+}
+
+.sec20  .page-menu {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.sec20  .page-menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.sec20  .page-menu .icon {
+  width: 50px;
+  height: 50px;
+  margin-left: 100px;
+  background-color: pink;
+}
+
+.sec20  .page-men .icon:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.sec21 {
+  width: 100%;
+  background-color: #ff9;
+  padding-bottom: 20px;
+}
+
+.sec21 h1 {
+  font-size: 24px;
+  color: blue;
+  font-weight: bold;
+  text-align: center;
+}
+
+.sec21 .inside-pic {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sec21 .inside-pic img {
+  display: block;
+  width: 30%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.sec22 {
+  margin: 20px auto;
+  width: 100%;
+}
+
+.sec22 .menu-bg {
+  margin: 20px auto;
+  width: 50%;
+  height: 320px;
+  background-image: url(../images/season2.png);
+}
+
+.sec22 .menu-bg .swiper-container {
+  padding-top: 40px;
+  margin: 0px auto;
+  width: 50%;
+  height: 250px;
+  overflow: hidden;
+}
+.sec22 .menu-bg .swiper-wrapper {
+  width: 100%;
+  background-color: #fff;
+}
+
+.sec22 .menu-bg .swiper-slide {
+  display: block;
+  width: 100%;
+  height: 250px;
+  background-color: #eeeeee;
+}
+.sec22 .menu-bg .swiper-slide img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.sec23 .main-pic {
+  margin-top: 10px;
+  width: 100%;
+  height: auto;
+}
+.sec23 .main-pic .swiper-container {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+}
+.sec23 .main-pic .swiper-wrapper {
+  width: 100%;
+}
+
+.sec23 .main-pic .swiper-slide {
+  width: 100%;
+  width: 15%;
+  display: block;
+  background-color: #eeeeee;
+}
+
+.sec23 .main-pic .swiper-slide img {
+  display: block;
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+}
+
+
+
+
+
+/* ふれあい */
+
+.sec30 {
+  width: 100%;
+  height: auto;
+  padding-top: 5px;
+  background-image:url(../images/season3.png);
+  background-size: cover;
+  background-position:50% 0%;
+}
+
+.sec30 .page-menu a {
+  cursor: pointer;
+}
+
+.sec30 .page-menu h2 {
+  font-size: 24px;
+  color: blue;
+  text-align: center;
+}
+
+.sec30  .page-menu {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.sec30  .page-menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.sec30  .page-menu .icon {
+  width: 50px;
+  height: 50px;
+  margin-left: 100px;
+  background-color: pink;
+}
+
+.sec30  .page-men .icon:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+
+.sec31 {
+  width: 100%;
+  background-color: #ff9;
+  padding-bottom: 20px;
+}
+
+.sec31 h1 {
+  font-size: 24px;
+  color: blue;
+  font-weight: bold;
+  text-align: center;
+}
+
+.sec31 .inside-pic {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sec31 .inside-pic img {
+  display: block;
+  width: 30%;
+  height: 200px;
+  object-fit: cover;
+}
+
+
+.sec32 {
+  margin: 20px auto;
+  width: 100%;
+}
+
+.sec32 .menu-bg {
+  margin: 20px auto;
+  width: 50%;
+  height: 320px;
+  background-image: url(../images/season3.png);
+}
+
+.sec32 .menu-bg .swiper-container {
+  padding-top: 40px;
+  margin: 0px auto;
+  width: 50%;
+  height: 250px;
+  overflow: hidden;
+}
+.sec32 .menu-bg .swiper-wrapper {
+  width: 100%;
+  background-color: #fff;
+}
+
+.sec32 .menu-bg .swiper-slide {
+  display: block;
+  width: 100%;
+  height: 250px;
+  background-color: #eeeeee;
+}
+.sec32 .menu-bg .swiper-slide img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+.sec33 .main-pic {
+  margin-top: 10px;
+  width: 100%;
+  height: auto;
+}
+.sec33 .main-pic .swiper-container {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+}
+.sec33 .main-pic .swiper-wrapper {
+  width: 100%;
+}
+
+.sec33 .main-pic .swiper-slide {
+  width: 100%;
+  width: 15%;
+  display: block;
+  background-color: #eeeeee;
+}
+
+.sec33 .main-pic .swiper-slide img {
+  display: block;
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+}
+
+
+
+/* ファミリー */
+
+
+.sec40 {
+  width: 100%;
+  height: 90px;
+  padding-top: 5px;
+  background-image:url(../images/season4.png);
+  background-size: cover;
+  background-position: 50% 10%;
+}
+
+.sec40 .page-menu a {
+  cursor: pointer;
+}
+
+.sec40  .page-menu {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.sec40  .page-menu ul {
+  list-style: none;
+  display: flex;
+}
+
+.sec40  .page-menu .icon {
+  width: 50px;
+  height: 50px;
+  margin-left: 100px;
+  background-color: pink;
+}
+
+.sec40  .page-menu .icon:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.sec41 {
+  width: 100%;
+  background-color: #ff9;
+  padding-bottom: 20px;
+}
+
+.sec41 h1 {
+  font-size: 24px;
+  color: blue;
+  font-weight: bold;
+  text-align: center;
+}
+
+.sec41 .inside-pic {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sec41 .inside-pic img {
+  display: block;
+  width: 30%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.sec42 {
+  margin: 20px auto;
+  width: 100%;
+}
+
+.sec42 .menu-bg {
+  margin: 20px auto;
+  width: 50%;
+  height: 320px;
+  background-image: url(../images/season4.png);
+}
+
+.sec42 .menu-bg .swiper-container {
+  padding-top: 40px;
+  margin: 0px auto;
+  width: 50%;
+  height: 250px;
+  overflow: hidden;
+}
+.sec42 .menu-bg .swiper-wrapper {
+  width: 100%;
+  background-color: #fff;
+}
+
+.sec42 .menu-bg .swiper-slide {
+  display: block;
+  width: 100%;
+  height: 250px;
+  background-color: #eeeeee;
+}
+.sec42 .menu-bg .swiper-slide img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.sec43 .main-pic {
+  margin-top: 10px;
+  width: 100%;
+  height: auto;
+}
+.sec43 .main-pic .swiper-container {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+}
+.sec43 .main-pic .swiper-wrapper {
+  width: 100%;
+}
+
+.sec43 .main-pic .swiper-slide {
+  width: 100%;
+  width: 15%;
+  display: block;
+  background-color: #eeeeee;
+}
+
+.sec43 .main-pic .swiper-slide img {
+  display: block;
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
